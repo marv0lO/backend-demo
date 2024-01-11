@@ -1,7 +1,7 @@
 
 # Backend Demo - Django Project
 
-This Django project serves as a simple example showcasing key concepts in backend engineering, including server-side logic, database management, API development, and security.
+This Django project serves as a simple example showcasing key concepts in backend engineering, including server-side logic, database management and API development.
 
 ## Table of Contents
 
