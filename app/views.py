@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .models import Task
+from .serializers import TaskSerializer
 
-# Create your views here.
+
+@api_view(['GET'])
+def task_list(request):
+    tasks = Task.objects.all()
+    serializer = TaskSerializer(tasks, many=True)
+    return Response(serializer.data)
